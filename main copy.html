@@ -51,7 +51,7 @@
                 <div>
                   <div class="row text-center">
                     <div class="title-card d-flex align-items-center">
-                      <div class="icon m-2">
+                      <div class="icon m-3">
                         <img class="img-fluid" src="Icons/motorIcon.png" style="width: 50px; height: 50px" />
                       </div>
                       <div class="title text-center">
@@ -60,7 +60,7 @@
                     </div>
 
                   </div>
-                  <div class="card-body-containerl mt-2">
+                  <div class="card-body-containerl mt-0">
                     <div class="row">
                       <div class="col md-2 justify-content-center">
                         <label id="labeltext" class="row ">Motor 1</label>
@@ -161,7 +161,7 @@
                         <div class="col-md-7">
                           <div class="round_label timer-box justify-content-center">
                             <label id="timer">15:00</label>
-                            <label style = " color = rgb(47, 59, 80); "> m:s</label>
+                            <label style=" color = rgb(47, 59, 80); "> m:s</label>
                           </div>
                         </div>
                       </div>
@@ -195,41 +195,36 @@
                 </div>
               </div>
             </div>
-<div class=" card col-md-12 justify-content-centre mt-4">
-  <div class="row mt-2">
-    <div class="row">
-      <div class="col-md-6 blob">
-          <h2>Arm's Information</h2>
-      </div>
-      <div class="col-md-6">
-          <img src="Icons/roboticArmIcon.png " style="width: 50px; height: 50px" />
-      </div>
+                  <!-- add Arms's Icon --> 
+                  <!--make 4th card -->
+            <div class=" card col-md-12 justify-content-center mt-3"> 
+              <div class="row m-2">
+                  <div class="col-md-6 blob">
+                    <h1>Arm Information</h1>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="Icons/roboticArmIcon.png " style="width: 50px; height: 50px" />
+                  </div>
+                <div class="row mt-2 ">
 
-      <!-- add Arms's Icon -->
-  </div>
-  <div class="row">
-      <!-- pnumeatic arm and Dc arm status -->
-      <div class="col-lg-6">
-          <div class="col-lg-3">
-              <label>DC Arm</label>
-          </div>
-          <div class="col-lg-3">
-              <div class="round_label">
-                  <label id="dcArmState">off</label>
+                  <div class="col-md-5 justify-content-center">
+                      <label id="labeltext">DC Arm</label>
+                      <div class="round_label arm">
+                         <label id="dcArmState">off</label>
+                      </div>
+                    
+                  </div>
+                  <div class="col-md-7 justify-content-center">
+                      <label id="labeltext">Pneumatic Arm</label>
+
+                      <div class="round_label arm">
+                        <label id="pneumaticArmState">off</label>
+                      </div>
+                   
+                  </div>
+                </div>
               </div>
-          </div>
-      </div>
-      <div class="col-lg-6">
-          <div class="col-lg-3"><label>Pneumatic Arm</label></div>
-          <div class="col-lg-3">
-              <div class="round_label">
-                  <label id="pnumaticArmState">off</label>
-              </div>
-          </div>
-      </div>
-  </div>
-  </div>
-</div>
+            </div>
           </div>
         </div>
     </section>
