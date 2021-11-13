@@ -85,9 +85,8 @@ padding-top: 60px;
 .btn-secondary{
   background-color: rgba(13, 6, 54, 0.682);
   justify-content: center;
-  width: 60px;
-  height: 30px;
-  border: 1px solid blue;
+  
+  box-sizing: border-box;
   font-family:  'IBM Plex Sans Devanagari', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    font-size: 15px;
    color: rgba(255, 255, 255, 0.8);
