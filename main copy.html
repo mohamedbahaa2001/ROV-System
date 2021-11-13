@@ -21,7 +21,7 @@
     <div class="container">
       <a class="navbar-brand" href="#"><img src="Icons\logo.png" alt="" height="40"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -41,7 +41,7 @@
   </nav>
 
   <div class="page-container">
-    <section class="p-5">
+    <section class="m-2">
 
       <div class="card-container">
         <div class="row text-center ">
@@ -50,8 +50,8 @@
               <div class="card-body text-center ">
                 <div>
                   <div class="row text-center">
-                    <div class="title-card d-flex ">
-                      <div class="icon">
+                    <div class="title-card d-flex align-items-center">
+                      <div class="icon m-2">
                         <img class="img-fluid" src="Icons/motorIcon.png" style="width: 50px; height: 50px" />
                       </div>
                       <div class="title text-center">
@@ -60,7 +60,7 @@
                     </div>
 
                   </div>
-                  <div class="card-body-container flex-fill mt-4">
+                  <div class="card-body-containerl mt-2">
                     <div class="row">
                       <div class="col md-2 justify-content-center">
                         <label id="labeltext" class="row ">Motor 1</label>
@@ -91,15 +91,17 @@
             </div>
 
           </div>
-          <div class="col">
-            <div class="card text-light">
+          <div class="col-md-4">
+            <div class="card text-light justify-content-center">
               <div class="card-body text-center ">
                 <div>
                   <div class="row text-center">
                     <div class="title-card d-flex">
-                      <img class="img" src="Icons\joystick.png" style="width: 50px; height: 50px" />
-                      <div>
-                        <h1 class="blob"> Joystick</h1>
+                      <div class="col-md-4 justify-content-center">
+                        <img class="img" src="Icons\joystick.png" style="width: 50px; height: 50px" />
+                      </div>
+                      <div class="col-md-7 justify-content-center mt-2">
+                        <h1 class="blob joysticktitle"> Joystick</h1>
                       </div>
                     </div>
 
@@ -118,7 +120,7 @@
                       </div>
                     </div>
 
-                    <div class="col-md-4" style="padding-left:5%;">
+                    <div class="col-md-4">
                       <label id="labeltext">Right</label>
                       <div class="round_label">
                         <label id="right">0</label>
@@ -128,7 +130,7 @@
                         <label id="left">0</label>
                       </div>
                     </div>
-                    <div class="col-md-4" style="padding-left: 5%;">
+                    <div class="col-md-4">
                       <label id="labeltext">Up</label>
                       <div class="round_label">
                         <label id="up">0</label>
@@ -146,50 +148,88 @@
             </div>
 
           </div>
-          <div class="col">
+          <div class="col-md-4">
             <div class="card text-light">
               <div class="card-body text-center ">
                 <div>
                   <div class="row">
                     <div class="row text-left">
-                      <div class="timer-container">
-                      <label class="blob">Timer</label>
-                      <div>
-                        <div class="round_label justify-content-center">
-                          <label style="font-size: x-large margin-bottom: 5px;" id="timer">15:00</label>
-                          <label style="font-size: larger color=rgb(9, 38, 88) "> m:s</label>
+                      <div class="timer-container mt-1 mb-1 d-flex">
+                        <div class="col-md-4">
+                          <label class="blob">Timer</label>
+                        </div>
+                        <div class="col-md-7">
+                          <div class="round_label timer-box justify-content-center">
+                            <label id="timer">15:00</label>
+                            <label style = " color = rgb(47, 59, 80); "> m:s</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row ">
+                        <div class="col-md-6 mt-4 mb-4">
+                          <button type="button" class="btn btn-secondary" id="startTimer">
+                            Start
+                          </button>
+                        </div>
+                        <div class="col-md-6 mt-4 mb-4">
+                          <button type="button" class="btn btn-secondary" id="resetTimer">
+                            Reset
+                          </button>
                         </div>
                       </div>
                     </div>
-                    <div class="row justify-content-center">
-                      <div class="col">
-                        <button type="button" class="btn btn-secondary" id="startTimer">
-                          Start
-                        </button>
-                      </div>
-                      <div class="col">
-                        <button type="button" class="btn btn-secondary" id="resetTimer">
-                          Reset
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                    <div class="row justify-content-center">
-                      <div class="col-md-2">
+                    <div class="row mt-4 mb=4 justify-content-center">
+                      <div class="col-md-6">
                         <input type="number" min="0" max="100" id="maxSpeedInput" />
                       </div>
 
-                      <div class="col-md-2">
-                        <input type="range" id="range" min="0" max="100" oninput="myFunction(this.value)"
+                      <div class="col-md-6">
+                        <input class="m-1" type="range" id="range" min="0" max="100" oninput="myFunction(this.value)"
                           onchange="myFunction(this.value)" />
                       </div>
                     </div>
+
 
                   </div>
                 </div>
               </div>
             </div>
+<div class=" card col-md-12 justify-content-centre mt-4">
+  <div class="row mt-2">
+    <div class="row">
+      <div class="col-md-6 blob">
+          <h2>Arm's Information</h2>
+      </div>
+      <div class="col-md-6">
+          <img src="Icons/roboticArmIcon.png " style="width: 50px; height: 50px" />
+      </div>
 
+      <!-- add Arms's Icon -->
+  </div>
+  <div class="row">
+      <!-- pnumeatic arm and Dc arm status -->
+      <div class="col-lg-6">
+          <div class="col-lg-3">
+              <label>DC Arm</label>
+          </div>
+          <div class="col-lg-3">
+              <div class="round_label">
+                  <label id="dcArmState">off</label>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-6">
+          <div class="col-lg-3"><label>Pneumatic Arm</label></div>
+          <div class="col-lg-3">
+              <div class="round_label">
+                  <label id="pnumaticArmState">off</label>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
           </div>
         </div>
     </section>
